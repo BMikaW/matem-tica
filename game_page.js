@@ -18,6 +18,14 @@ function send(){
     number2 = document.getElementById("number2").value;
     actual_answer = parseInt(number1) * parseInt(number2);
     
+question_number = "<h4>"+number1+" x "+nunber2+"</h4>"
+input_box = "<br> Resposta: <input type='text' id='inpt_check_box'>";
+check_button ="<br><br> <button class='btn btn-info' onclick='check()'>Checara</button>";
+ 
+row = question_number+input_box_+check_button;
 
-    
+document.getElementById("output").innerHTML=row;
+
+document.getElementById("numero1").value ="";
+document.getElementById("numero2").value ="";
 }
